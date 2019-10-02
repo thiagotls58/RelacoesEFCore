@@ -1,0 +1,11 @@
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.deps.json
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.runtimeconfig.json
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.runtimeconfig.dev.json
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.dll
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.csprojAssemblyReference.cache
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.csproj.CoreCompileInputs.cache
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.AssemblyInfoInputs.cache
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.AssemblyInfo.cs
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.pdb
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.dll
+C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.pdb
