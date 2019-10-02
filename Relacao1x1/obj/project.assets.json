@@ -3461,7 +3461,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Microsoft.EntityFrameworkCore >= 2.2.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
@@ -3474,11 +3473,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\RelacaoNxN\\RelacaoNxN.csproj",
-      "projectName": "RelacaoNxN",
-      "projectPath": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\RelacaoNxN\\RelacaoNxN.csproj",
+      "projectUniqueName": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\Relacao1x1\\Relacao1x1.csproj",
+      "projectName": "Relacao1x1",
+      "projectPath": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\Relacao1x1\\Relacao1x1.csproj",
       "packagesPath": "C:\\Users\\thiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\RelacaoNxN\\obj\\",
+      "outputPath": "C:\\Users\\thiago\\Documents\\GitHub\\RelacoesEFCore\\Relacao1x1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3510,10 +3509,6 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.2.0, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.2.0, )"
