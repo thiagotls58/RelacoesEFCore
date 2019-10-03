@@ -6,3 +6,6 @@ C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2
 C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2.2\Relacao1x1.csproj.CoreCompileInputs.cache
 C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2.2\Relacao1x1.AssemblyInfoInputs.cache
 C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2.2\Relacao1x1.AssemblyInfo.cs
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\bin\Debug\netcoreapp2.2\Relacao1x1.pdb
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2.2\Relacao1x1.dll
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1x1\obj\Debug\netcoreapp2.2\Relacao1x1.pdb

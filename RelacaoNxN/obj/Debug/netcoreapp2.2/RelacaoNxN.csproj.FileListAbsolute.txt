@@ -9,3 +9,14 @@ C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\ne
 C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.pdb
 C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.dll
 C:\Users\intepp\source\GitHub\thiagotls58\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.pdb
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.deps.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.runtimeconfig.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.runtimeconfig.dev.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.dll
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\bin\Debug\netcoreapp2.2\RelacaoNxN.pdb
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.csprojAssemblyReference.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.csproj.CoreCompileInputs.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.AssemblyInfoInputs.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.AssemblyInfo.cs
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.dll
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\RelacaoNxN\obj\Debug\netcoreapp2.2\RelacaoNxN.pdb
