@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Relacao1x1.Data;
-using Relacao1x1.Model;
+using Relacao1xN.Data;
+using Relacao1xN.Model;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace Relacao1x1
+namespace Relacao1xN
 {
     class Program
     {
@@ -15,20 +16,22 @@ namespace Relacao1x1
                 Url = "www.meublog.com"
             };
 
-            BlogImage blogImage = new BlogImage()
+            List<Post> posts = new List<Post>()
             {
-                Image = "Imagem",
-                Blog = blog
+                new Post(){ Title="Post 01" },
+                new Post(){ Title="Post 02" },
+                new Post(){ Title="Post 02" }
             };
+
+            blog.Posts = posts;
 
             CriarDatabase();
 
             using (var db = new MyContext())
             {
-                
                 try
                 {
-                    db.Add(blogImage);
+                    db.Add(blog);
                     db.SaveChanges();
                     Console.WriteLine("Objetos persistidos com sucesso!");
                 }
@@ -51,9 +54,9 @@ namespace Relacao1x1
                 {
                     db.Database.ExecuteSqlCommand("DELETE FROM dbo.Blogs");
                 }
-                if (db.BlogImages.Any())
+                if (db.Posts.Any())
                 {
-                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.BlogImages");
+                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.Posts");
                 }
             }
         }

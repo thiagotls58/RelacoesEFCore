@@ -1,0 +1,11 @@
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\bin\Debug\netcoreapp2.2\Relacao1xN.deps.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\bin\Debug\netcoreapp2.2\Relacao1xN.runtimeconfig.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\bin\Debug\netcoreapp2.2\Relacao1xN.runtimeconfig.dev.json
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\bin\Debug\netcoreapp2.2\Relacao1xN.dll
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.csprojAssemblyReference.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.csproj.CoreCompileInputs.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.AssemblyInfoInputs.cache
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.AssemblyInfo.cs
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\bin\Debug\netcoreapp2.2\Relacao1xN.pdb
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.dll
+C:\Users\thiago\Documents\GitHub\RelacoesEFCore\Relacao1xN\obj\Debug\netcoreapp2.2\Relacao1xN.pdb

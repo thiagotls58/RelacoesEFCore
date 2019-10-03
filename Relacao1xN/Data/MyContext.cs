@@ -1,22 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Relacao1x1.Model;
+using Relacao1xN.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Relacao1x1.Data
+namespace Relacao1xN.Data
 {
     class MyContext : DbContext
     {
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<BlogImage> BlogImages { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
-        protected override void OnModelCreating (ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Blog>()
-                .HasOne(b => b.BlogImage)
-                .WithOne(bi => bi.Blog)
-                .HasForeignKey<BlogImage>(bi => bi.BlogId);
+            modelBuilder.Entity<Post>()
+                .HasOne(p => p.Blog)
+                .WithMany(b => b.Posts);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
