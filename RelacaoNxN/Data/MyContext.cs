@@ -8,20 +8,20 @@ namespace RelacaoNxN.Data
 {
     class MyContext : DbContext
     {
-        public DbSet<Produto> Produto { get; set; }
-        public DbSet<Item> Item { get; set; }
-        public DbSet<ProdutoItem> ProdutoItem { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<PostTag> PostTags { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<PostTag>()
+                .HasKey(pt => new { pt.PostId, pt.TagId });
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=(localdb)\mssqllocaldb;Database=EFCore.Relacoes;Trusted_Connection=True;");
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ProdutoItem>()
-                .HasKey(pi => new { pi.ProdutoId, pi.ItemId });
+                @"Server=(localdb)\MSSQLLocalDB;Database=EFCore.Relacoes;Trusted_Connection=True;");
         }
     }
 }

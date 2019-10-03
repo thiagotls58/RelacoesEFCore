@@ -51,13 +51,10 @@ namespace Relacao1xN
                 db.Database.EnsureCreated();
 
                 if (db.Blogs.Any())
-                {
                     db.Database.ExecuteSqlCommand("DELETE FROM dbo.Blogs");
-                }
+
                 if (db.Posts.Any())
-                {
                     db.Database.ExecuteSqlCommand("DELETE FROM dbo.Posts");
-                }
             }
         }
     }

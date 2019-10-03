@@ -12,79 +12,55 @@ namespace RelacaoNxN
     {
         static void Main(string[] args)
         {
+            Post post1 = new Post() { Title = "Post 01" };
+            Post post2 = new Post() { Title = "Post 02" };
+            Post post3 = new Post() { Title = "Post 03" };
+
+            Tag t1 = new Tag() { TagId = "Tag 01" };
+            Tag t2 = new Tag() { TagId = "Tag 02" };
+            Tag t3 = new Tag() { TagId = "Tag 03" };
+
+            List<PostTag> postTags1 = new List<PostTag>()
+            {
+                new PostTag() { Post = post1, Tag = t1 },
+                new PostTag() { Post = post1, Tag = t2 },
+                new PostTag() { Post = post1, Tag = t3 }
+            };
+            post1.PostTags = postTags1;
+
+            List<PostTag> postTags2 = new List<PostTag>()
+            {
+                new PostTag() { Post = post2, Tag = t1 },
+                new PostTag() { Post = post2, Tag = t2 },
+                new PostTag() { Post = post2, Tag = t3 }
+            };
+            post2.PostTags = postTags2;
+
+            List<PostTag> postTags3 = new List<PostTag>()
+            {
+                new PostTag() { Post = post3, Tag = t1 },
+                new PostTag() { Post = post3, Tag = t2 },
+                new PostTag() { Post = post3, Tag = t3 }
+            };
+            post3.PostTags = postTags3;
+
+            CriarDatabase();
+
             using (var db = new MyContext())
             {
-                CriarDatabase();
-
-                Produto produto_1 = new Produto
-                {
-                    ProdutoId = "prod_01",
-                    Descricao = "Coca-Cola",
-                    ProdutoItem = new List<ProdutoItem>()
-                };
-
-                Item item_1 = new Item
-                {
-                    ItemId = "item_01",
-                    Quantidade = 3,
-                    ProdutoItem = new List<ProdutoItem>()
-                };
-
-                Item item_2 = new Item
-                {
-                    ItemId = "item_02",
-                    Quantidade = 5,
-                    ProdutoItem = new List<ProdutoItem>()
-                };
-
-                Item item_3 = new Item
-                {
-                    ItemId = "item_03",
-                    Quantidade = 1,
-                    ProdutoItem = new List<ProdutoItem>()
-                };
-
-                ProdutoItem pi_1 = new ProdutoItem
-                {
-                    ProdutoId = produto_1.ProdutoId,
-                    Produto = produto_1,
-                    ItemId = item_1.ItemId,
-                    Item = item_1
-                };
-
-                ProdutoItem pi_2 = new ProdutoItem
-                {
-                    ProdutoId = produto_1.ProdutoId,
-                    Produto = produto_1,
-                    ItemId = item_2.ItemId,
-                    Item = item_2
-                };
-
-                ProdutoItem pi_3 = new ProdutoItem
-                {
-                    ProdutoId = produto_1.ProdutoId,
-                    Produto = produto_1,
-                    ItemId = item_3.ItemId,
-                    Item = item_3
-                };
-
-                produto_1.ProdutoItem.Add(pi_1);
-                produto_1.ProdutoItem.Add(pi_2);
-                produto_1.ProdutoItem.Add(pi_3);
-
                 try
                 {
-                    db.Update(produto_1);
-
+                    db.Add(post1);
+                    db.Add(post2);
+                    db.Add(post3);
                     db.SaveChanges();
-
-                    Console.WriteLine("Objetos persistidos no banco de dados");
+                    Console.WriteLine("Objetos persistidos com sucesso!");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Problemas ao persistir no banco de dados");
+                    Console.WriteLine("Erro ao persistir os objetos!");
+                    Console.WriteLine(ex.Message);
                 }
-
             }
         }
 
@@ -95,18 +71,15 @@ namespace RelacaoNxN
                 db.Database.EnsureDeleted();
                 db.Database.EnsureCreated();
 
-                if (db.Produto.Any())
-                {
-                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.Produto");
-                }
-                if (db.Item.Any())
-                {
-                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.Item");
-                }
-                if (db.ProdutoItem.Any())
-                {
-                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.ProdutoItem");
-                }
+                if (db.PostTags.Any())
+                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.PostTags");
+
+                if (db.Posts.Any())
+                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.Posts");
+
+                if (db.Tags.Any())
+                    db.Database.ExecuteSqlCommand("DELETE FROM dbo.Tags");
+                
             }
         }
     }

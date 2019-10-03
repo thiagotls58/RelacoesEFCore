@@ -48,13 +48,10 @@ namespace Relacao1x1
                 db.Database.EnsureCreated();
 
                 if (db.Blogs.Any())
-                {
                     db.Database.ExecuteSqlCommand("DELETE FROM dbo.Blogs");
-                }
+
                 if (db.BlogImages.Any())
-                {
                     db.Database.ExecuteSqlCommand("DELETE FROM dbo.BlogImages");
-                }
             }
         }
     }
