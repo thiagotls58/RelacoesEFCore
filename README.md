@@ -4,3 +4,6 @@ Exemplos de relacionamento entre tabelas no banco de dados relacional utilizando
   - Relacionamento um-para-um
   - Relacionamento um-para-muitos
   - Relacionamento muitos-para-muitos
+
+
+Referência: https://docs.microsoft.com/pt-br/ef/core/modeling/relationships
